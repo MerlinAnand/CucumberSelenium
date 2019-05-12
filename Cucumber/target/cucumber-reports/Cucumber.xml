@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="138.685636">
+<testcase classname="Test Search functionality and home page of ebay site" name="Test launch of application and home page" time="84.731932">
+<system-out><![CDATA[Given I have launched browser...............................................passed
+When I am on ebay home page.................................................passed
+Then user should be able to see ebay home page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Search functionality and home page of ebay site" name="Test search functionality add and remove item to cart" time="53.953704">
+<system-out><![CDATA[Given I am on ebay home page................................................passed
+When I search for "Books"...................................................passed
+Then I can see search results for "Books"...................................passed
+Then I select the "BORN IN 1939" in the search results......................passed
+Then I add item to the cart.................................................passed
+Then I remove item from the cart............................................passed
+And verify the item status..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

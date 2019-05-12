@@ -1,0 +1,171 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Test launch of application and home page",
+        "description": "",
+        "id": "test-search-functionality-and-home-page-of-ebay-site;test-launch-of-application-and-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18353742728,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched browser",
+            "match": {
+              "location": "Search.i_have_launched_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66182529351,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on ebay home page",
+            "match": {
+              "location": "Search.Navigate_To_Ebay()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119973136,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should be able to see ebay home page",
+            "match": {
+              "location": "Search.user_should_be_able_to_see_ebay_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Test search functionality add and remove item to cart",
+        "description": "",
+        "id": "test-search-functionality-and-home-page-of-ebay-site;test-search-functionality-add-and-remove-item-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15275159825,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on ebay home page",
+            "match": {
+              "location": "Search.Navigate_To_Ebay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9660060584,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for \"Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Books",
+                  "offset": 14
+                }
+              ],
+              "location": "Search.Search_For_Item(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2552824642,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can see search results for \"Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Books",
+                  "offset": 30
+                }
+              ],
+              "location": "Search.Verify_Search_Result(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15099728359,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select the \"BORN IN 1939\" in the search results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BORN IN 1939",
+                  "offset": 14
+                }
+              ],
+              "location": "Search.i_click_the_first_item_in_the_search_results(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9380052112,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I add item to the cart",
+            "match": {
+              "location": "Search.i_add_item_to_cart_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 225340393,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I remove item from the cart",
+            "match": {
+              "location": "Search.i_click_remove_item_from_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1733933184,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify the item status",
+            "match": {
+              "location": "Search.verify_the_heading()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Search functionality and home page of ebay site",
+    "description": "",
+    "id": "test-search-functionality-and-home-page-of-ebay-site",
+    "keyword": "Feature",
+    "uri": "Features/Search.feature",
+    "tags": []
+  }
+]
