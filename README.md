@@ -26,7 +26,7 @@ Goto project directory.
 
 2) Command Prompt
 
-Use mvn test -Dcucumber.options="/Cucumber/Feautures/search.feature" to run specific feature if you have multiple feature files.
+Use mvn test -Dcucumber.options="/Cucumber/Feautures/search.feature" to run specific feature.
 
 Use mvn test -Dcucumber.options="–-plugin html:target/result-html" to generate a HTML report.
 
